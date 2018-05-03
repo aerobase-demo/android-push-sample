@@ -1,0 +1,47 @@
+{/* Replace any 'cloud' subdomain with your account name */
+  "version": 1,
+  "services": [
+    {
+      "id": "keycloak",
+      "name": "keycloak",
+      "type": "keycloak",
+      "url": "https://cloud.aerobase.io/unifiedpush-server/auth/",
+      "config": {
+        "auth-server-url": "https://cloud.aerobase.io/unifiedpush-server/auth",
+        "realm": "",
+        "resource": "",
+        "ssl-required": "external",
+        "url": "https://cloud.aerobase.io/unifiedpush-server/auth"
+      }
+    },
+    {
+      "id": "metrics",
+      "name": "metrics",
+      "url": "https://cloud.aerobase.io/unifiedpush-server/metrics",
+      "type": "metrics",
+      "config": {
+      }
+    },
+    {
+      "id": "push",
+      "name": "push",
+      "url": "https://cloud.aerobase.io/unifiedpush-server/",
+      "type": "push",
+      "config": {
+        "android": {
+          "variantId": "91a55c4d-cf8d-4e24-9da7-33bef6e677ad",
+          "variantSecret": "17ce223b-601a-4f6b-a1c8-d1e9a5b449d8",
+          "senderId": "440003753440"
+        }
+      }
+    }
+  ],
+  "https": {
+    "certificatePins": [
+      {
+        "host": "https://cloud.aerobase.io",
+        "certificateHash": "trENjoQnbWupnAtu1/WagBE0RgJ+p7ke2ppWML8vAl0="
+      }
+    ]
+  }
+}

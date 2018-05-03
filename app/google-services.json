@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "440003753440",
+    "firebase_url": "https://aerobase-185608.firebaseio.com",
+    "project_id": "aerobase-185608",
+    "storage_bucket": "aerobase-185608.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440003753440:android:5543a68aaf9ddb3c",
+        "android_client_info": {
+          "package_name": "demo.cordova.aerobase.io"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440003753440-d7raq64ki0fs0e6lpedvv7lnvsonca6k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeC8x-GieuvKT0g9mHYuSrvszlthb1Zns"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440003753440:android:36af5049bb7ae6c1",
+        "android_client_info": {
+          "package_name": "io.aerobase.push.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440003753440-d7raq64ki0fs0e6lpedvv7lnvsonca6k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeC8x-GieuvKT0g9mHYuSrvszlthb1Zns"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
