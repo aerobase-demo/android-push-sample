@@ -1,15 +1,17 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion project.ext.targetSdkVersion
+
     defaultConfig {
         applicationId "io.aerobase.push.demo"
-        minSdkVersion 27
-        targetSdkVersion 27
+        minSdkVersion project.ext.minSdkVersion
+        targetSdkVersion project.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -25,8 +27,11 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:support-v4:27.1.1'
     implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:support-media-compat:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation "com.google.firebase:firebase-messaging:${project.ext.firebase_version}"
     implementation 'org.aerobase:android-core:0.1.0'
     implementation 'org.aerobase:android-push:0.1.0' // <- adjust to suit release version
 
